@@ -14,8 +14,8 @@ public class ActivateStar : MonoBehaviour
 	//--------------------------START---------------------------//
 	void Start ()
 	{
-		active = false;
-		polaris = Camera.main.GetComponent<LerpToPolaris> ().polaris.gameObject;
+		active = false; //Stars are inactive by default
+		polaris = Camera.main.GetComponent<LerpToPolaris> ().polaris.gameObject; //Gets Polaris from MainCamera
 	}
 	//----------------------------------------------------------//
 
@@ -25,7 +25,8 @@ public class ActivateStar : MonoBehaviour
 	{
 		if (active == true) {
 			tempT -= Time.deltaTime;
-			if (tempT < 0) {
+			if (tempT < 0 && transform.parent.GetComponent<AreChildsActive> ().constDiscovered == false) { 
+				//If the indivual star timer runs out, and the constellation is still undiscovered, then :
 				active = false;
 				tempT = 0;
 			}
