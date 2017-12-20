@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 135820840036089572}
   - component: {fileID: 54912666949023050}
   - component: {fileID: 114438326498540028}
+  - component: {fileID: 114327531674173612}
   m_Layer: 8
   m_Name: ClickableArea
   m_TagString: Untagged
@@ -119,6 +120,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   active: 0
   activeTimerSec: 50
+--- !u!114 &114327531674173612
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1648526689934658}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54dc8ab0a70d93148b2b95a197236ab2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  linkedStars: []
 --- !u!114 &114438326498540028
 MonoBehaviour:
   m_ObjectHideFlags: 1
