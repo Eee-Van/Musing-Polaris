@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class AreChildsActive : MonoBehaviour
 {
+	public Color constColor;
 
 	public bool constDiscovered;
 
