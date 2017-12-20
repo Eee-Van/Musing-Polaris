@@ -327,7 +327,11 @@ Prefab:
     - target: {fileID: 1733354726552850, guid: 7f3e680a376d4844780ca1266889b47e, type: 2}
       propertyPath: m_Name
 <<<<<<< HEAD
+<<<<<<< HEAD
       value: Star_Prefab 5
+=======
+      value: Star_Prefab 6
+>>>>>>> Caroline
 =======
       value: Star_Prefab 6
 >>>>>>> Caroline
@@ -355,7 +359,11 @@ Prefab:
     m_TransformParent: {fileID: 1415702599}
     m_Modifications:
 <<<<<<< HEAD
+<<<<<<< HEAD
     - target: {fileID: 114327531674173612, guid: 7f3e680a376d4844780ca1266889b47e,
+=======
+    - target: {fileID: 114449105025504238, guid: 7f3e680a376d4844780ca1266889b47e,
+>>>>>>> Caroline
 =======
     - target: {fileID: 114449105025504238, guid: 7f3e680a376d4844780ca1266889b47e,
 >>>>>>> Caroline
@@ -397,6 +405,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1733354726552850, guid: 7f3e680a376d4844780ca1266889b47e, type: 2}
       propertyPath: m_Name
+<<<<<<< HEAD
 <<<<<<< HEAD
       value: Star_Prefab 0
       objectReference: {fileID: 0}
@@ -462,7 +471,25 @@ Prefab:
     - target: {fileID: 4378051229437590, guid: cfda0eca4a87eee45be4fa2a5c709520, type: 2}
       propertyPath: m_RootOrder
       value: 10
+=======
+      value: Star_Prefab 1
+>>>>>>> Caroline
       objectReference: {fileID: 0}
+    - target: {fileID: 114449105025504238, guid: 7f3e680a376d4844780ca1266889b47e,
+        type: 2}
+      propertyPath: linkedStars.Array.data[0]
+      value: 
+      objectReference: {fileID: 611096732}
+    - target: {fileID: 114449105025504238, guid: 7f3e680a376d4844780ca1266889b47e,
+        type: 2}
+      propertyPath: linkedStars.Array.data[1]
+      value: 
+      objectReference: {fileID: 1368205970}
+    - target: {fileID: 114449105025504238, guid: 7f3e680a376d4844780ca1266889b47e,
+        type: 2}
+      propertyPath: linkedStars.Array.data[2]
+      value: 
+      objectReference: {fileID: 862396417}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cfda0eca4a87eee45be4fa2a5c709520, type: 2}
   m_IsPrefabParent: 0
@@ -492,6 +519,9 @@ GameObject:
   m_PrefabParentObject: {fileID: 1648526689934658, guid: 7f3e680a376d4844780ca1266889b47e,
     type: 2}
   m_PrefabInternal: {fileID: 1620843029}
+<<<<<<< HEAD
+>>>>>>> Caroline
+=======
 >>>>>>> Caroline
 --- !u!4 &642675980 stripped
 Transform:
@@ -540,7 +570,11 @@ Prefab:
     - target: {fileID: 1733354726552850, guid: 7f3e680a376d4844780ca1266889b47e, type: 2}
       propertyPath: m_Name
 <<<<<<< HEAD
+<<<<<<< HEAD
       value: Star_Prefab 4
+=======
+      value: Star_Prefab 5
+>>>>>>> Caroline
 =======
       value: Star_Prefab 5
 >>>>>>> Caroline
@@ -4468,17 +4502,23 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1238851255}
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!1 &1256871557 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1648526689934658, guid: 7f3e680a376d4844780ca1266889b47e,
     type: 2}
   m_PrefabInternal: {fileID: 220921851}
 =======
+=======
+>>>>>>> Caroline
 --- !u!1 &1368205970 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1648526689934658, guid: 7f3e680a376d4844780ca1266889b47e,
     type: 2}
   m_PrefabInternal: {fileID: 1601892613}
+<<<<<<< HEAD
+>>>>>>> Caroline
+=======
 >>>>>>> Caroline
 --- !u!1 &1373181486
 GameObject:
@@ -4589,7 +4629,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
 <<<<<<< HEAD
+<<<<<<< HEAD
   constColor: {r: 0, g: 0, b: 0, a: 0}
+=======
+  constColor: {r: 1, g: 1, b: 1, a: 0.20392157}
+>>>>>>> Caroline
 =======
   constColor: {r: 1, g: 1, b: 1, a: 0.20392157}
 >>>>>>> Caroline
@@ -4721,7 +4765,11 @@ Prefab:
     - target: {fileID: 1733354726552850, guid: 7f3e680a376d4844780ca1266889b47e, type: 2}
       propertyPath: m_Name
 <<<<<<< HEAD
+<<<<<<< HEAD
       value: Star_Prefab 3
+=======
+      value: Star_Prefab 4
+>>>>>>> Caroline
 =======
       value: Star_Prefab 4
 >>>>>>> Caroline
@@ -4784,7 +4832,11 @@ Prefab:
     - target: {fileID: 1733354726552850, guid: 7f3e680a376d4844780ca1266889b47e, type: 2}
       propertyPath: m_Name
 <<<<<<< HEAD
+<<<<<<< HEAD
       value: Star_Prefab 2
+=======
+      value: Star_Prefab 3
+>>>>>>> Caroline
 =======
       value: Star_Prefab 3
 >>>>>>> Caroline
