@@ -22,10 +22,7 @@ GameObject:
   - component: {fileID: 135820840036089572}
   - component: {fileID: 54912666949023050}
   - component: {fileID: 114438326498540028}
-<<<<<<< HEAD
-=======
   - component: {fileID: 114449105025504238}
->>>>>>> master
   m_Layer: 8
   m_Name: ClickableArea
   m_TagString: Untagged
@@ -123,12 +120,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   active: 0
   activeTimerSec: 50
-<<<<<<< HEAD
-<<<<<<< HEAD
---- !u!114 &114327531674173612
-=======
 --- !u!114 &114438326498540028
->>>>>>> master
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -139,19 +131,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d04af63d302161d4ea05624fc9796032, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-<<<<<<< HEAD
-  linkedStars: []
-  linePrefab: {fileID: 1685391813461754, guid: cfda0eca4a87eee45be4fa2a5c709520, type: 2}
-=======
->>>>>>> parent of 7bb4ff7... Commit Etienne 20/12 13:40
---- !u!114 &114438326498540028
-=======
   parentStar: {fileID: 1733354726552850}
   pullForce: 0.12
   targetColor: {r: 1, g: 0, b: 0, a: 1}
   colorLerpSpeed: 1
 --- !u!114 &114449105025504238
->>>>>>> master
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
