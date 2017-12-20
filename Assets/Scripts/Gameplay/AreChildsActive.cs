@@ -8,7 +8,6 @@ public class AreChildsActive : MonoBehaviour
 
 	public bool constDiscovered;
 	public GameObject[] starChildren;
-	public Color constColor;
 
 
 	//--------------------------START---------------------------//
