@@ -22,19 +22,7 @@ GameObject:
   - component: {fileID: 135820840036089572}
   - component: {fileID: 54912666949023050}
   - component: {fileID: 114438326498540028}
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-  - component: {fileID: 114327531674173612}
-=======
   - component: {fileID: 114449105025504238}
->>>>>>> Caroline
-=======
-  - component: {fileID: 114449105025504238}
->>>>>>> Caroline
-=======
-  - component: {fileID: 114449105025504238}
->>>>>>> Caroline
   m_Layer: 8
   m_Name: ClickableArea
   m_TagString: Untagged
@@ -132,19 +120,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   active: 0
   activeTimerSec: 50
---- !u!114 &114327531674173612
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1648526689934658}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 54dc8ab0a70d93148b2b95a197236ab2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  linkedStars: []
-  linePrefab: {fileID: 1685391813461754, guid: cfda0eca4a87eee45be4fa2a5c709520, type: 2}
 --- !u!114 &114438326498540028
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -172,7 +147,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   linkedStars: []
-  linePrefab: {fileID: 1730603499805974, guid: cfda0eca4a87eee45be4fa2a5c709520, type: 2}
+  linePrefab: {fileID: 1721878980031736, guid: cfda0eca4a87eee45be4fa2a5c709520, type: 2}
 --- !u!135 &135002835084054108
 SphereCollider:
   m_ObjectHideFlags: 1

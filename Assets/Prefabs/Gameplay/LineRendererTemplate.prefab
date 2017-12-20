@@ -9,17 +9,17 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1730603499805974}
+  m_RootGameObject: {fileID: 1721878980031736}
   m_IsPrefabParent: 1
---- !u!1 &1730603499805974
+--- !u!1 &1721878980031736
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 5
   m_Component:
-  - component: {fileID: 4937405726517842}
-  - component: {fileID: 120902806079526102}
+  - component: {fileID: 4239750052440420}
+  - component: {fileID: 120305020137431200}
   m_Layer: 0
   m_Name: LineRendererTemplate
   m_TagString: Untagged
@@ -27,29 +27,29 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4937405726517842
+--- !u!4 &4239750052440420
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1730603499805974}
+  m_GameObject: {fileID: 1721878980031736}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7.7712913, y: 8.861417, z: -0.119625896}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!120 &120902806079526102
+--- !u!120 &120305020137431200
 LineRenderer:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1730603499805974}
+  m_GameObject: {fileID: 1721878980031736}
   m_Enabled: 1
   m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 0
   m_MotionVectors: 0
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 0
@@ -80,10 +80,10 @@ LineRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -1
   m_Positions:
   - {x: 0, y: 0, z: 0}
-  - {x: 0, y: 10, z: 1}
+  - {x: 0, y: 8, z: 1}
   m_Parameters:
     serializedVersion: 2
     widthMultiplier: 1
@@ -92,7 +92,7 @@ LineRenderer:
       m_Curve:
       - serializedVersion: 2
         time: 0
-        value: 0.15060234
+        value: 0.1
         inSlope: 0
         outSlope: 0
         tangentMode: 0
@@ -101,8 +101,8 @@ LineRenderer:
       m_RotationOrder: 0
     colorGradient:
       serializedVersion: 2
-      key0: {r: 1, g: 1, b: 1, a: 0.33333334}
-      key1: {r: 1, g: 1, b: 1, a: 0.33333334}
+      key0: {r: 1, g: 1, b: 1, a: 0.49803922}
+      key1: {r: 1, g: 1, b: 1, a: 0.49803922}
       key2: {r: 0, g: 0, b: 0, a: 0}
       key3: {r: 0, g: 0, b: 0, a: 0}
       key4: {r: 0, g: 0, b: 0, a: 0}
@@ -128,8 +128,8 @@ LineRenderer:
       m_Mode: 0
       m_NumColorKeys: 2
       m_NumAlphaKeys: 2
-    numCornerVertices: 0
-    numCapVertices: 1
+    numCornerVertices: 1
+    numCapVertices: 0
     alignment: 0
     textureMode: 0
     generateLightingData: 0

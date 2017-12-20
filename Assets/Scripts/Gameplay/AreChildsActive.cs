@@ -7,8 +7,6 @@ public class AreChildsActive : MonoBehaviour
 	public Color constColor;
 
 	public bool constDiscovered;
-	public GameObject[] starChildren;
-
 
 	//--------------------------START---------------------------//
 	void Start ()
@@ -21,9 +19,8 @@ public class AreChildsActive : MonoBehaviour
 	//--------------------------UPDATE--------------------------//
 	void Update ()
 	{
-		if (constDiscovered == false) {
-			if (CheckIfStarsAreActive ())
-				constDiscovered = true; //Once a constellation is Discovered, there's not going back.
+		if (CheckIfStarsAreActive () && constDiscovered == false) {
+			constDiscovered = true; //Once a constellation is Discovered, there's not going back.
 			//Should we make it so discovered constellations are saved through play sessions?
 		}
 	}
@@ -40,24 +37,7 @@ public class AreChildsActive : MonoBehaviour
 				return false;
 			}
 		}
-		//Here there should be a "for" loop drawing lines for each star children
-		//...Now how do we get what the 
 		return true;
 	}
 	//----------------------------------------------------------//
-
-	void DrawLineBetween (Vector3 start, Vector3 end, Color color)
-	{
-		print ("startLineDraw"); 
-		GameObject myLine = new GameObject ();
-		myLine.transform.position = start;
-		myLine.AddComponent<LineRenderer> ();
-		LineRenderer lr = myLine.GetComponent<LineRenderer> ();
-		lr.material = new Material (Shader.Find ("Particles/Alpha Blended Premultiply"));
-		lr.startColor = color;
-		lr.startWidth = 0.1f;
-		lr.endWidth = 0.1f;
-		lr.SetPosition (0, start);
-		lr.SetPosition (1, end);
-	}
 }

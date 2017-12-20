@@ -14,15 +14,11 @@ public class ZoomControl : MonoBehaviour
 
 	private float targetCamZ;
 
-	//--------------------------START---------------------------//
 	void Start ()
 	{
 		targetCamZ = minZoomIn;
 	}
-	//----------------------------------------------------------//
 
-
-	//-------------------------UPDATE---------------------------//
 	void Update ()
 	{
 		//Zoom in or out en utilisant l'output envoyée par l'input "Mouse ScrollWheel"
@@ -42,5 +38,4 @@ public class ZoomControl : MonoBehaviour
 		Camera.main.GetComponent<Transform> ().position = Vector3.Lerp (Camera.main.transform.position, targetCamPos, 1 / zoomDelay);
 
 	}
-	//----------------------------------------------------------//
 }
