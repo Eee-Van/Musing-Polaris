@@ -4153,51 +4153,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
-    - target: {fileID: 0}
-      propertyPath: m_Mass
-      value: 0.649519
-      objectReference: {fileID: 0}
-    - target: {fileID: 0}
-      propertyPath: m_LinearDrag
-      value: 0.25
-      objectReference: {fileID: 0}
-    - target: {fileID: 0}
-      propertyPath: m_AngularDrag
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 0}
-      propertyPath: m_Material
-      value: 
-      objectReference: {fileID: 6200000, guid: 1026955aadc7c0b4f9feef50c7c32836, type: 2}
-    - target: {fileID: 0}
-      propertyPath: m_Material
-      value: 
-      objectReference: {fileID: 6200000, guid: 1026955aadc7c0b4f9feef50c7c32836, type: 2}
-    - target: {fileID: 50316820042381704, guid: bd20fb0050bd2cf448263de81e5caf06,
-        type: 2}
-      propertyPath: m_Mass
-      value: 0.649519
-      objectReference: {fileID: 0}
-    - target: {fileID: 54029253661020896, guid: bd20fb0050bd2cf448263de81e5caf06,
-        type: 2}
-      propertyPath: m_Drag
-      value: 0.3
-      objectReference: {fileID: 0}
-    - target: {fileID: 198250833779508114, guid: bd20fb0050bd2cf448263de81e5caf06,
-        type: 2}
-      propertyPath: ShapeModule.radius.value
-      value: 0.33
-      objectReference: {fileID: 0}
-    - target: {fileID: 198250833779508114, guid: bd20fb0050bd2cf448263de81e5caf06,
-        type: 2}
-      propertyPath: randomSeed
-      value: 128490965
-      objectReference: {fileID: 0}
-    - target: {fileID: 198250833779508114, guid: bd20fb0050bd2cf448263de81e5caf06,
-        type: 2}
-      propertyPath: EmissionModule.rateOverDistance.scalar
-      value: 5
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: bd20fb0050bd2cf448263de81e5caf06, type: 2}
   m_IsPrefabParent: 0
