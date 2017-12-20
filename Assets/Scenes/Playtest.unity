@@ -4111,6 +4111,7 @@ Prefab:
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
+<<<<<<< HEAD
     - target: {fileID: 198250833779508114, guid: bd20fb0050bd2cf448263de81e5caf06,
         type: 2}
       propertyPath: EmissionModule.rateOverDistance.scalar
@@ -4121,6 +4122,8 @@ Prefab:
       propertyPath: randomSeed
       value: -1052889119
       objectReference: {fileID: 0}
+=======
+>>>>>>> Caroline
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: bd20fb0050bd2cf448263de81e5caf06, type: 2}
   m_IsPrefabParent: 0
