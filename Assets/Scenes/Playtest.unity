@@ -151,6 +151,7 @@ Prefab:
       propertyPath: m_RootOrder
       value: 10
       objectReference: {fileID: 0}
+<<<<<<< HEAD
     - target: {fileID: 4378051229437590, guid: cfda0eca4a87eee45be4fa2a5c709520, type: 2}
       propertyPath: m_RootOrder
       value: 10
@@ -280,6 +281,11 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+=======
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: cfda0eca4a87eee45be4fa2a5c709520, type: 2}
+  m_IsPrefabParent: 0
+>>>>>>> Caroline
 --- !u!1001 &220921851
 Prefab:
   m_ObjectHideFlags: 0

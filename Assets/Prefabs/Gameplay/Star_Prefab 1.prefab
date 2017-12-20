@@ -172,7 +172,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   linkedStars: []
-  linePrefab: {fileID: 1064521692275090, guid: cfda0eca4a87eee45be4fa2a5c709520, type: 2}
+  linePrefab: {fileID: 1730603499805974, guid: cfda0eca4a87eee45be4fa2a5c709520, type: 2}
 --- !u!135 &135002835084054108
 SphereCollider:
   m_ObjectHideFlags: 1
