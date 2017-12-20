@@ -22,7 +22,6 @@ GameObject:
   - component: {fileID: 135820840036089572}
   - component: {fileID: 54912666949023050}
   - component: {fileID: 114438326498540028}
-  - component: {fileID: 114327531674173612}
   m_Layer: 8
   m_Name: ClickableArea
   m_TagString: Untagged
@@ -120,6 +119,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   active: 0
   activeTimerSec: 50
+<<<<<<< HEAD
 --- !u!114 &114327531674173612
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -133,6 +133,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   linkedStars: []
   linePrefab: {fileID: 1685391813461754, guid: cfda0eca4a87eee45be4fa2a5c709520, type: 2}
+=======
+>>>>>>> parent of 7bb4ff7... Commit Etienne 20/12 13:40
 --- !u!114 &114438326498540028
 MonoBehaviour:
   m_ObjectHideFlags: 1
