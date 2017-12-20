@@ -4183,6 +4183,21 @@ Prefab:
       propertyPath: m_Drag
       value: 0.3
       objectReference: {fileID: 0}
+    - target: {fileID: 198250833779508114, guid: bd20fb0050bd2cf448263de81e5caf06,
+        type: 2}
+      propertyPath: ShapeModule.radius.value
+      value: 0.33
+      objectReference: {fileID: 0}
+    - target: {fileID: 198250833779508114, guid: bd20fb0050bd2cf448263de81e5caf06,
+        type: 2}
+      propertyPath: randomSeed
+      value: 128490965
+      objectReference: {fileID: 0}
+    - target: {fileID: 198250833779508114, guid: bd20fb0050bd2cf448263de81e5caf06,
+        type: 2}
+      propertyPath: EmissionModule.rateOverDistance.scalar
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: bd20fb0050bd2cf448263de81e5caf06, type: 2}
   m_IsPrefabParent: 0
@@ -4543,6 +4558,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f0249ccb7af401468cc43c2c4fc31a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  constDiscovered: 0
 --- !u!1 &1487438428
 GameObject:
   m_ObjectHideFlags: 0
