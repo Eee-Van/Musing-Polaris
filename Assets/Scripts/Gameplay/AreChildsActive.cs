@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class AreChildsActive : MonoBehaviour
 {
+<<<<<<< HEAD
+=======
+	public Color constColor;
+>>>>>>> master
 
 	public bool constDiscovered;
 
