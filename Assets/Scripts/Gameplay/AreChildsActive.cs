@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class AreChildsActive : MonoBehaviour
 {
+	public Color constColor;
 
 	public bool constDiscovered;
 
@@ -18,9 +19,15 @@ public class AreChildsActive : MonoBehaviour
 	//--------------------------UPDATE--------------------------//
 	void Update ()
 	{
-		if (CheckIfStarsAreActive () && constDiscovered == false) {
-			constDiscovered = true; //Once a constellation is Discovered, there's not going back.
-			//Should we make it so discovered constellations are saved through play sessions?
+		if (constDiscovered == false) {
+			if (CheckIfStarsAreActive ()) {
+				constDiscovered = true; //Once a constellation is Discovered, there's not going back.
+				DrawLinks[] drawLinks = GetComponentsInChildren<DrawLinks> (); //Choppe tous les Drawlinks enfants
+				foreach (DrawLinks scriptToActivate in drawLinks) {
+					scriptToActivate.enabled = true; //Active chacun d'entre eux
+				}
+
+			}//Should we make it so discovered constellations are saved through play sessions?
 		}
 	}
 	//----------------------------------------------------------//
@@ -34,8 +41,11 @@ public class AreChildsActive : MonoBehaviour
 		foreach (Transform child in transform) {
 			if (child.GetComponent<ActivateStar> ().active == false) {
 				return false;
+				break;
 			}
 		}
+		print ("1");
+
 		return true;
 	}
 	//----------------------------------------------------------//
