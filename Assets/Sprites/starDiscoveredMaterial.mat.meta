@@ -1,11 +1,6 @@
 fileFormatVersion: 2
-<<<<<<< HEAD:Assets/Prefabs/Gameplay/LineRendererTemplate.prefab.meta
-guid: cfda0eca4a87eee45be4fa2a5c709520
-timeCreated: 1513770541
-=======
 guid: 0aaaaad4575575d42938d0eecf3870ac
 timeCreated: 1513785611
->>>>>>> Caroline:Assets/Sprites/starDiscoveredMaterial.mat.meta
 licenseType: Free
 NativeFormatImporter:
   externalObjects: {}

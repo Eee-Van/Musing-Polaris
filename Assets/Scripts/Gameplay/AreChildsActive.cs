@@ -4,11 +4,9 @@ using UnityEngine;
 
 public class AreChildsActive : MonoBehaviour
 {
-
-	public bool constDiscovered;
-	public GameObject[] starChildren;
 	public Color constColor;
 
+	public bool constDiscovered;
 
 	//--------------------------START---------------------------//
 	void Start ()
@@ -22,11 +20,6 @@ public class AreChildsActive : MonoBehaviour
 	void Update ()
 	{
 		if (constDiscovered == false) {
-<<<<<<< HEAD
-			if (CheckIfStarsAreActive ())
-				constDiscovered = true; //Once a constellation is Discovered, there's not going back.
-			//Should we make it so discovered constellations are saved through play sessions?
-=======
 			if (CheckIfStarsAreActive ()) {
 				constDiscovered = true; //Once a constellation is Discovered, there's not going back.
 				DrawLinks[] drawLinks = GetComponentsInChildren<DrawLinks> (); //Choppe tous les Drawlinks enfants
@@ -35,7 +28,6 @@ public class AreChildsActive : MonoBehaviour
 				}
 
 			}//Should we make it so discovered constellations are saved through play sessions?
->>>>>>> Caroline
 		}
 	}
 	//----------------------------------------------------------//
@@ -52,29 +44,9 @@ public class AreChildsActive : MonoBehaviour
 				break;
 			}
 		}
-<<<<<<< HEAD
-		//Here there should be a "for" loop drawing lines for each star children
-		//...Now how do we get what the 
-=======
 		print ("1");
 
->>>>>>> Caroline
 		return true;
 	}
 	//----------------------------------------------------------//
-
-	void DrawLineBetween (Vector3 start, Vector3 end, Color color)
-	{
-		print ("startLineDraw"); 
-		GameObject myLine = new GameObject ();
-		myLine.transform.position = start;
-		myLine.AddComponent<LineRenderer> ();
-		LineRenderer lr = myLine.GetComponent<LineRenderer> ();
-		lr.material = new Material (Shader.Find ("Particles/Alpha Blended Premultiply"));
-		lr.startColor = color;
-		lr.startWidth = 0.1f;
-		lr.endWidth = 0.1f;
-		lr.SetPosition (0, start);
-		lr.SetPosition (1, end);
-	}
 }
