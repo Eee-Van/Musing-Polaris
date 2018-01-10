@@ -22,9 +22,20 @@ public class AreChildsActive : MonoBehaviour
 	void Update ()
 	{
 		if (constDiscovered == false) {
+<<<<<<< HEAD
 			if (CheckIfStarsAreActive ())
 				constDiscovered = true; //Once a constellation is Discovered, there's not going back.
 			//Should we make it so discovered constellations are saved through play sessions?
+=======
+			if (CheckIfStarsAreActive ()) {
+				constDiscovered = true; //Once a constellation is Discovered, there's not going back.
+				DrawLinks[] drawLinks = GetComponentsInChildren<DrawLinks> (); //Choppe tous les Drawlinks enfants
+				foreach (DrawLinks scriptToActivate in drawLinks) {
+					scriptToActivate.enabled = true; //Active chacun d'entre eux
+				}
+
+			}//Should we make it so discovered constellations are saved through play sessions?
+>>>>>>> Caroline
 		}
 	}
 	//----------------------------------------------------------//
@@ -38,10 +49,16 @@ public class AreChildsActive : MonoBehaviour
 		foreach (Transform child in transform) {
 			if (child.GetComponent<ActivateStar> ().active == false) {
 				return false;
+				break;
 			}
 		}
+<<<<<<< HEAD
 		//Here there should be a "for" loop drawing lines for each star children
 		//...Now how do we get what the 
+=======
+		print ("1");
+
+>>>>>>> Caroline
 		return true;
 	}
 	//----------------------------------------------------------//
