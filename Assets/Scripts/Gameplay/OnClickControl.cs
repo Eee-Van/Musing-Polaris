@@ -19,7 +19,7 @@ public class OnClickControl : MonoBehaviour
 	//--------------------------START---------------------------//
 	void Start ()
 	{
-		initParentColor = parentStar.GetComponent<SpriteRenderer> ().material.color;
+//		initParentColor = parentStar.GetComponent<SpriteRenderer> ().material.color;
 		polaris = Camera.main.GetComponent<LerpToPolaris> ().polaris;
 	}
 	//----------------------------------------------------------//
@@ -57,7 +57,7 @@ public class OnClickControl : MonoBehaviour
 	void OnMouseUp ()
 	{
 		pullActive = false; //While false, Polaris is... not pulled
-		parentStar.GetComponent<SpriteRenderer> ().material.color = initParentColor;
+//		parentStar.GetComponent<SpriteRenderer> ().material.color = initParentColor;
 	}
 	//--------------------------------------------------------//
 

@@ -8,7 +8,6 @@ public class ActivateStar : MonoBehaviour
 	public float activeTimerSec = 300f;
 
 	private GameObject polaris;
-	private float lightPower;
 	private float tempT;
 
 	//--------------------------START---------------------------//
