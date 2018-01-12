@@ -15,8 +15,8 @@ public class MoveAheadOfPolaris : MonoBehaviour
 
 	void Update ()
 	{
-		transform.position = new Vector3 (transform.position.x + polaris.velocity.x,
-			transform.position.y + polaris.velocity.y,
-			transform.position.z);
+		transform.position = new Vector3 (polaris.transform.position.x + polaris.velocity.x * 2,
+			polaris.transform.position.y + polaris.velocity.y * 2,
+			0);
 	}
 }

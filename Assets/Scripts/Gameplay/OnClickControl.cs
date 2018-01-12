@@ -15,6 +15,8 @@ public class OnClickControl : MonoBehaviour
 	private Color initParentColor;
 	private bool pullActive;
 
+	public AudioClip onClickSound;
+	public AudioSource audioSource;
 
 	//--------------------------START---------------------------//
 	void Start ()
@@ -49,6 +51,8 @@ public class OnClickControl : MonoBehaviour
 	void OnMouseDown ()
 	{
 		pullActive = true; //While true, Polaris is pulled
+		audioSource.pitch += Random.Range (-1, 1) / 50;
+		audioSource.PlayOneShot (onClickSound, 0.5f);
 	}
 	//----------------------------------------------------------//
 
