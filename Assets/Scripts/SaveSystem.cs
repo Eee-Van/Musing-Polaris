@@ -5,13 +5,15 @@ using UnityEngine;
 
 public class SaveSystem : MonoBehaviour
 {
-	public GameObject Polaris;
+	private GameObject polaris;
+
 	public string myPath;
 
 	//--------------------------START---------------------------//
 	void Start ()
 	{
 		myPath = GetPath ();
+		polaris = Camera.main.GetComponent<LerpToPolaris> ().polaris.gameObject;
 	}
 	//----------------------------------------------------------//
 
@@ -20,8 +22,8 @@ public class SaveSystem : MonoBehaviour
 	public void Save ()
 	{
 		DataContainer myData = new DataContainer ();
-		myData.polarisX = Polaris.transform.position.x;
-		myData.polarisY = Polaris.transform.position.y;
+		myData.polarisX = polaris.transform.position.x;
+		myData.polarisY = polaris.transform.position.y;
 
 		myData.Save (myPath);
 	}
@@ -35,7 +37,7 @@ public class SaveSystem : MonoBehaviour
 //		Polaris.transform.position.x = myData.polarisX;
 //		Polaris.transform.position.y = myData.polarisY;
 
-		Polaris.transform.position = new Vector3 (myData.polarisX, myData.polarisY, Polaris.transform.position.z);
+		polaris.transform.position = new Vector3 (myData.polarisX, myData.polarisY, polaris.transform.position.z);
 
 	}
 	//----------------------------------------------------------//

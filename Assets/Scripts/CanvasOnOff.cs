@@ -5,7 +5,9 @@ using UnityEngine;
 public class CanvasOnOff : MonoBehaviour
 {
 
-	public Canvas canvas;
+	public GameObject loadSaveUI;
+
+
 
 	//--------------------------START---------------------------//
 	void Start ()
@@ -19,10 +21,10 @@ public class CanvasOnOff : MonoBehaviour
 	void Update ()
 	{
 		if (Input.GetKeyDown (KeyCode.Space)) {
-			if (canvas.isActiveAndEnabled)
-				canvas.gameObject.SetActive (false);
-			else if (!canvas.isActiveAndEnabled) {
-				canvas.gameObject.SetActive (true);
+			if (loadSaveUI.activeSelf)
+				loadSaveUI.gameObject.SetActive (false);
+			else if (!loadSaveUI.activeSelf) {
+				loadSaveUI.gameObject.SetActive (true);
 			}
 		}
 	}

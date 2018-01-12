@@ -66,14 +66,15 @@ public class OnClickControl : MonoBehaviour
 	void pullPolaris (Rigidbody other)
 	{
 		Vector2 direction = new Vector3 (//Defines the direction from Polaris to the star
-			                    (transform.position.x - other.transform.position.x),
-			                    (transform.position.y - other.transform.position.y));
+			                    transform.position.x - other.transform.position.x,
+			                    transform.position.y - other.transform.position.y,
+			                    0);
 		other.AddForce (direction * pullForce, ForceMode.Force); //Pushes Polaris using the previous direction
 		//Can vary the "pull" strength by varying pullForce
 
 
-		parentStar.GetComponent<SpriteRenderer> ().material.color = //Lerps the star's color over time			
-			Color.Lerp (targetColor, initParentColor, Mathf.PingPong (Time.time, colorLerpSpeed));
+//		parentStar.GetComponent<SpriteRenderer> ().material.color = //Lerps the star's color over time			
+//			Color.Lerp (targetColor, initParentColor, Mathf.PingPong (Time.time, colorLerpSpeed));
 	}
 	//--------------------------------------------------------//
 }
