@@ -41,7 +41,6 @@ public class AreChildsActive : MonoBehaviour
 		foreach (Transform child in transform) {
 			if (child.GetComponent<ActivateStar> ().active == false) {
 				return false;
-				break;
 			}
 		}
 		print ("1");
