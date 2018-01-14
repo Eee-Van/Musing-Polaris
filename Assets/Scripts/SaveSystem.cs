@@ -8,10 +8,14 @@ public class SaveSystem : MonoBehaviour
 	public GameObject Polaris;
 	public string myPath;
 
+	private float tempFloatX;
+	private float tempFloatY;
+
 	//--------------------------START---------------------------//
 	void Start ()
 	{
 		myPath = GetPath ();
+		Polaris = Camera.main.GetComponent<LerpToPolaris> ().polaris.gameObject;
 	}
 	//----------------------------------------------------------//
 
@@ -19,11 +23,8 @@ public class SaveSystem : MonoBehaviour
 	//--------------------------SAVE----------------------------//
 	public void Save ()
 	{
-		DataContainer myData = new DataContainer ();
-		myData.polarisX = Polaris.transform.position.x;
-		myData.polarisY = Polaris.transform.position.y;
-
-		myData.Save (myPath);
+		PlayerPrefs.SetFloat ("polarisPosX", Polaris.transform.position.x);
+		PlayerPrefs.SetFloat ("polarisPosY", Polaris.transform.position.y);
 	}
 	//----------------------------------------------------------//
 
@@ -31,12 +32,11 @@ public class SaveSystem : MonoBehaviour
 	//--------------------------LOAD----------------------------//
 	public void Load ()
 	{
-		DataContainer myData = DataContainer.Load (myPath);
-//		Polaris.transform.position.x = myData.polarisX;
-//		Polaris.transform.position.y = myData.polarisY;
-
-		Polaris.transform.position = new Vector3 (myData.polarisX, myData.polarisY, Polaris.transform.position.z);
-
+		if (PlayerPrefs.HasKey ("polarisPosX") && PlayerPrefs.HasKey ("polarisPosY")) {
+			tempFloatX = PlayerPrefs.GetFloat ("polarisPosX");
+			tempFloatY = PlayerPrefs.GetFloat ("polarisPosY");
+			Polaris.transform.position = new Vector3 (tempFloatX, tempFloatY, 0);
+		}
 	}
 	//----------------------------------------------------------//
 

@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CanvasOnOff : MonoBehaviour
+public class SaveUIOnOff : MonoBehaviour
 {
 
-	public Canvas canvas;
+	public GameObject saveUI;
 
 	//--------------------------START---------------------------//
 	void Start ()
@@ -19,10 +19,10 @@ public class CanvasOnOff : MonoBehaviour
 	void Update ()
 	{
 		if (Input.GetKeyDown (KeyCode.Space)) {
-			if (canvas.isActiveAndEnabled)
-				canvas.gameObject.SetActive (false);
-			else if (!canvas.isActiveAndEnabled) {
-				canvas.gameObject.SetActive (true);
+			if (saveUI.activeInHierarchy)
+				saveUI.SetActive (false);
+			else if (!saveUI.activeInHierarchy) {
+				saveUI.SetActive (true);
 			}
 		}
 	}
