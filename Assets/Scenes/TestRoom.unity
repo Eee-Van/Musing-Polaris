@@ -233,7 +233,7 @@ MonoBehaviour:
   testVar: 0
   musicVolumeRampSpeed: 0.1
   musicRampAtStart: 0.1
-  maxVolume: 0.5
+  maxVolume: 0.2
 --- !u!114 &174380930
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -362,7 +362,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -1000
   m_Sprite: {fileID: 21300000, guid: 5fa205a4aec352a48abaa62e1d58ae28, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -814,7 +814,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -1000
   m_Sprite: {fileID: 21300000, guid: 09b29299dd3a0264f8d059259eb9618d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1019,7 +1019,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -1000
   m_Sprite: {fileID: 21300000, guid: 9b4b333a949b6b54eb5f7a7babd82a51, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1106,7 +1106,7 @@ MonoBehaviour:
   testVar: 0
   musicVolumeRampSpeed: 0.1
   musicRampAtStart: 0.1
-  maxVolume: 0.5
+  maxVolume: 0.2
 --- !u!114 &351967047
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1235,7 +1235,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -1000
   m_Sprite: {fileID: 21300000, guid: 2c1c09a12ee0b994499814d64f7e1657, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1664,7 +1664,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -1000
   m_Sprite: {fileID: 21300000, guid: 7142bfdd0a21188418c50060c6f9b4fe, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -5328,7 +5328,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -1000
   m_Sprite: {fileID: 21300000, guid: 35b9b3a07376853478154e944701092b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -9273,7 +9273,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -1000
   m_Sprite: {fileID: 21300000, guid: e965b8a32a5733c4f8d8a4c731b68948, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -16429,7 +16429,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -1000
   m_Sprite: {fileID: 21300000, guid: 0296d309706c8864789703a3add2105b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -16491,10 +16491,6 @@ Prefab:
     - target: {fileID: 4843422896553730, guid: bcf14384572a626458ccaab4571191b1, type: 2}
       propertyPath: m_RootOrder
       value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 1444242480285324, guid: bcf14384572a626458ccaab4571191b1, type: 2}
-      propertyPath: m_Name
-      value: TargetDummy
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: bcf14384572a626458ccaab4571191b1, type: 2}
@@ -16723,7 +16719,7 @@ MonoBehaviour:
   testVar: 0
   musicVolumeRampSpeed: 0.1
   musicRampAtStart: 0.1
-  maxVolume: 0.5
+  maxVolume: 0.2
 --- !u!114 &1337518747
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16852,7 +16848,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -1000
   m_Sprite: {fileID: 21300000, guid: 10e549d83bc86eb418025b6c8617e294, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -17007,7 +17003,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: -1439889928
+  randomSeed: -172285679
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -20615,7 +20611,7 @@ MonoBehaviour:
   testVar: 0
   musicVolumeRampSpeed: 0.1
   musicRampAtStart: 0.1
-  maxVolume: 0.5
+  maxVolume: 0.2
 --- !u!114 &1531482870
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20744,7 +20740,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -1000
   m_Sprite: {fileID: 21300000, guid: 66cb9d298065a824d8eb78b63f764474, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -21005,7 +21001,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -1000
   m_Sprite: {fileID: 21300000, guid: 7d991a742f0f20a47b9285268e973648, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -21383,7 +21379,7 @@ MonoBehaviour:
   testVar: 0
   musicVolumeRampSpeed: 0.1
   musicRampAtStart: 0.1
-  maxVolume: 0.5
+  maxVolume: 0.2
 --- !u!114 &1891841801
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21512,7 +21508,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -1000
   m_Sprite: {fileID: 21300000, guid: 4e36fd2e79541a341acec36fdfea334e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
