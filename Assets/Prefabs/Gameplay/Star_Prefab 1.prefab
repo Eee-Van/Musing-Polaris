@@ -197,10 +197,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 54dc8ab0a70d93148b2b95a197236ab2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  linkedStars:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  linkedStars: []
   linePrefab: {fileID: 1721878980031736, guid: cfda0eca4a87eee45be4fa2a5c709520, type: 2}
 --- !u!114 &114162998010769582
 MonoBehaviour:

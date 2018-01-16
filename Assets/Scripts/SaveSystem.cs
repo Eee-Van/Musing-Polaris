@@ -5,17 +5,16 @@ using UnityEngine;
 
 public class SaveSystem : MonoBehaviour
 {
-	public GameObject Polaris;
 	public string myPath;
 
+	private GameObject polaris;
 	private float tempFloatX;
 	private float tempFloatY;
 
 	//--------------------------START---------------------------//
 	void Start ()
 	{
-		myPath = GetPath ();
-		Polaris = Camera.main.GetComponent<LerpToPolaris> ().polaris.gameObject;
+		polaris = Camera.main.GetComponent<LerpToPolaris> ().polaris.gameObject;
 	}
 	//----------------------------------------------------------//
 
@@ -23,8 +22,8 @@ public class SaveSystem : MonoBehaviour
 	//--------------------------SAVE----------------------------//
 	public void Save ()
 	{
-		PlayerPrefs.SetFloat ("polarisPosX", Polaris.transform.position.x);
-		PlayerPrefs.SetFloat ("polarisPosY", Polaris.transform.position.y);
+		PlayerPrefs.SetFloat ("polarisPosX", polaris.transform.position.x);
+		PlayerPrefs.SetFloat ("polarisPosY", polaris.transform.position.y);
 	}
 	//----------------------------------------------------------//
 
@@ -35,24 +34,8 @@ public class SaveSystem : MonoBehaviour
 		if (PlayerPrefs.HasKey ("polarisPosX") && PlayerPrefs.HasKey ("polarisPosY")) {
 			tempFloatX = PlayerPrefs.GetFloat ("polarisPosX");
 			tempFloatY = PlayerPrefs.GetFloat ("polarisPosY");
-			Polaris.transform.position = new Vector3 (tempFloatX, tempFloatY, 0);
+			polaris.transform.position = new Vector3 (tempFloatX, tempFloatY, 0);
 		}
-	}
-	//----------------------------------------------------------//
-
-
-	//-------------------------GET_PATH-------------------------//
-	public string GetPath ()
-	{
-		string TempPath = Directory.GetCurrentDirectory ();
-
-		if (!Directory.Exists (TempPath + @"\Data")) {
-			Directory.CreateDirectory (TempPath + @"\Data");
-		}
-
-		TempPath += @"\Data\LevelData.xml";
-
-		return TempPath;
 	}
 	//----------------------------------------------------------//
 }
