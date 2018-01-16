@@ -39,8 +39,10 @@ public class AreChildsActive : MonoBehaviour
 	{
 
 		foreach (Transform child in transform) {
-			if (child.GetComponent<ActivateStar> ().active == false) {
-				return false;
+			if (child.gameObject.GetComponent<ActivateStar> () != null) {
+				if (child.gameObject.GetComponent<ActivateStar> ().active == false) {
+					return false;
+				}
 			}
 		}
 		print ("1");

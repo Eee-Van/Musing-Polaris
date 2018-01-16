@@ -4,9 +4,12 @@ using UnityEngine;
 
 public class LerpToPolaris : MonoBehaviour
 {
-
-	public float lerpSpeed = 1f;
+	//Those are public variable that are stored here so that they are easily accessible from any script
+	public string currentConst;
 	public Transform polaris;
+
+	//Those are variables used locally
+	public float lerpSpeed = 1f;
 	public Transform lerpTarget;
 
 	//--------------------------START---------------------------//
