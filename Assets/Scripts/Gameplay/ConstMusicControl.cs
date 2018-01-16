@@ -27,6 +27,7 @@ public class ConstMusicControl : MonoBehaviour
 			isMusicActive = true;
 			Camera.main.GetComponent<LerpToPolaris> ().currentConst = gameObject.name;
 		}
+		maxVolume = maxVolume * PlayerPrefs.GetFloat ("masterVolumePref") * 2;
 		StartCoroutine (RemoveStartRamp ());
 	}
 	//----------------------------------------------------------//
@@ -36,13 +37,13 @@ public class ConstMusicControl : MonoBehaviour
 	{
 		//This part controls what the local volume should be.
 		if (isMusicActive && localVolume < maxVolume) {
-			localVolume += Time.deltaTime * musicVolumeRampSpeed * musicRampAtStart;
+			localVolume += Time.deltaTime * musicVolumeRampSpeed * musicRampAtStart * maxVolume;
 			if (localVolume > maxVolume) {
 				localVolume = maxVolume;
 				musicRampAtStart = 1;
 			}
 		} else if (!isMusicActive && localVolume > 0) {
-			localVolume -= Time.deltaTime * musicVolumeRampSpeed * musicRampAtStart;
+			localVolume -= Time.deltaTime * musicVolumeRampSpeed * musicRampAtStart * maxVolume;
 			if (localVolume < 0) {
 				localVolume = 0;
 				musicRampAtStart = 1;

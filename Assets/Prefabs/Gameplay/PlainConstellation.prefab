@@ -53,7 +53,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 5, y: 5, z: 0}
+  m_Size: {x: 5.5, y: 5.5, z: 0}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!82 &82861363581729960
 AudioSource:
@@ -149,7 +149,7 @@ MonoBehaviour:
   testVar: 0
   musicVolumeRampSpeed: 0.1
   musicRampAtStart: 0.1
-  maxVolume: 0.5
+  maxVolume: 0.2
 --- !u!114 &114900989477021570
 MonoBehaviour:
   m_ObjectHideFlags: 1

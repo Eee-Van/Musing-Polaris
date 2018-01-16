@@ -4,18 +4,19 @@ using UnityEngine;
 
 public class OnClickControl : MonoBehaviour
 {
-	
+	//Variables used to control the movement of Polaris
 	private Transform polaris;
 	public GameObject parentStar;
 	public float pullForce;
-
-	public Color targetColor;
-	public float colorLerpSpeed;
-
-	private Color initParentColor;
 	private bool pullActive;
 
-	public AudioClip onClickSound;
+	//Variables used to control the (out of date) material color lerp
+	public Color targetColor;
+	public float colorLerpSpeed;
+	private Color initParentColor;
+
+	//Variables used to control the sounds emitted
+	public AudioClip[] onClickSounds;
 	public AudioSource audioSource;
 
 	//--------------------------START---------------------------//
@@ -52,7 +53,7 @@ public class OnClickControl : MonoBehaviour
 	{
 		pullActive = true; //While true, Polaris is pulled
 		audioSource.pitch += Random.Range (-1, 1) / 50;
-		audioSource.PlayOneShot (onClickSound, 0.5f);
+		audioSource.PlayOneShot (onClickSounds [Random.Range (0, onClickSounds.Length)], 0.5f);
 	}
 	//----------------------------------------------------------//
 
@@ -67,15 +68,17 @@ public class OnClickControl : MonoBehaviour
 
 
 	//---------------------PULL_POLARIS----------------------//
-	void pullPolaris (Rigidbody other)
+	void pullPolaris (Rigidbody polarisRB)
 	{
-		Vector2 direction = new Vector3 (//Defines the direction from Polaris to the star
-			                    (transform.position.x - other.transform.position.x),
-			                    (transform.position.y - other.transform.position.y));
-		other.AddForce (direction * pullForce, ForceMode.Force); //Pushes Polaris using the previous direction
+//		Système dépendant de la distance entre l'étoile et Polaris :
+		Vector3 direction = new Vector3 (//Defines the direction from Polaris to the star
+			                    (transform.position.x - polarisRB.transform.position.x),
+			                    (transform.position.y - polarisRB.transform.position.y));
+		polarisRB.AddForce ((direction.normalized) * pullForce, ForceMode.Force); //Pushes Polaris using the previous direction
 		//Can vary the "pull" strength by varying pullForce
+		//Puttin .normalized after direction makes the whole thing independent of DISTANCES
 
-
+		//Have to rework this part. It does nothing right now.
 		parentStar.GetComponent<SpriteRenderer> ().material.color = //Lerps the star's color over time			
 			Color.Lerp (targetColor, initParentColor, Mathf.PingPong (Time.time, colorLerpSpeed));
 	}

@@ -224,10 +224,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   parentStar: {fileID: 1733354726552850}
-  pullForce: 1.1
+  pullForce: 5
   targetColor: {r: 1, g: 0, b: 0, a: 1}
   colorLerpSpeed: 1
-  onClickSound: {fileID: 8300000, guid: 3d481f3c2c91c344f91dee4bf627ca89, type: 3}
+  onClickSounds:
+  - {fileID: 8300000, guid: 23c20ad63759bac47820aaf14fe27a84, type: 3}
+  - {fileID: 8300000, guid: c3c594c975a84db4183d830be47db88c, type: 3}
   audioSource: {fileID: 82844116250365706}
 --- !u!135 &135002835084054108
 SphereCollider:
