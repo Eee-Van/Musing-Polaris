@@ -225,6 +225,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxVolume: 1
+  saveSystemObject: {fileID: 0}
 --- !u!135 &135666986910659318
 SphereCollider:
   m_ObjectHideFlags: 1

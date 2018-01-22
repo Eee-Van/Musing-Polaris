@@ -26854,6 +26854,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 114680686830099950, guid: bcf14384572a626458ccaab4571191b1,
+        type: 2}
+      propertyPath: saveSystemObject
+      value: 
+      objectReference: {fileID: 2043311631}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: bcf14384572a626458ccaab4571191b1, type: 2}
   m_IsPrefabParent: 0
@@ -32011,6 +32016,11 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7f3e680a376d4844780ca1266889b47e, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &2043311631 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1761660244231104, guid: 89d6fbc4452af6b4bac326d2d0d73985,
+    type: 2}
+  m_PrefabInternal: {fileID: 371577220}
 --- !u!4 &2114329609 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4443425253521460, guid: 7f3e680a376d4844780ca1266889b47e,
@@ -32065,6 +32075,11 @@ Prefab:
       propertyPath: saveUI
       value: 
       objectReference: {fileID: 775456855}
+    - target: {fileID: 114954793793312338, guid: 302a274fe8879834b8bc3a3e3c85b072,
+        type: 2}
+      propertyPath: saveManagerObject
+      value: 
+      objectReference: {fileID: 2043311631}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 302a274fe8879834b8bc3a3e3c85b072, type: 2}
   m_IsPrefabParent: 0

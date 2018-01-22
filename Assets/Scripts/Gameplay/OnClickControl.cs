@@ -16,7 +16,7 @@ public class OnClickControl : MonoBehaviour
 	//	private Color initParentColor;
 
 	//Variables used to control the sounds emitted
-	public AudioClip[] onClickSounds;
+	public AudioClip onClickSound;
 	public AudioSource audioSource;
 
 	//--------------------------START---------------------------//
@@ -53,7 +53,7 @@ public class OnClickControl : MonoBehaviour
 	{
 		pullActive = true; //While true, Polaris is pulled
 		audioSource.pitch += Random.Range (-1, 1) / 25;
-		audioSource.PlayOneShot (onClickSounds [Random.Range (0, onClickSounds.Length)], 1f);
+		audioSource.PlayOneShot (onClickSound, 1f);
 	}
 	//----------------------------------------------------------//
 
