@@ -11,9 +11,9 @@ public class OnClickControl : MonoBehaviour
 	private bool pullActive;
 
 	//Variables used to control the (out of date) material color lerp
-	public Color targetColor;
-	public float colorLerpSpeed;
-	private Color initParentColor;
+	//	public Color targetColor;
+	//	public float colorLerpSpeed;
+	//	private Color initParentColor;
 
 	//Variables used to control the sounds emitted
 	public AudioClip[] onClickSounds;
@@ -52,8 +52,8 @@ public class OnClickControl : MonoBehaviour
 	void OnMouseDown ()
 	{
 		pullActive = true; //While true, Polaris is pulled
-		audioSource.pitch += Random.Range (-1, 1) / 50;
-		audioSource.PlayOneShot (onClickSounds [Random.Range (0, onClickSounds.Length)], 0.5f);
+		audioSource.pitch += Random.Range (-1, 1) / 25;
+		audioSource.PlayOneShot (onClickSounds [Random.Range (0, onClickSounds.Length)], 1f);
 	}
 	//----------------------------------------------------------//
 
@@ -79,8 +79,8 @@ public class OnClickControl : MonoBehaviour
 		//Puttin .normalized after direction makes the whole thing independent of DISTANCES
 
 		//Have to rework this part. It does nothing right now.
-		parentStar.GetComponent<SpriteRenderer> ().material.color = //Lerps the star's color over time			
-			Color.Lerp (targetColor, initParentColor, Mathf.PingPong (Time.time, colorLerpSpeed));
+//		parentStar.GetComponent<SpriteRenderer> ().material.color = //Lerps the star's color over time			
+//			Color.Lerp (targetColor, initParentColor, Mathf.PingPong (Time.time, colorLerpSpeed));
 	}
 	//--------------------------------------------------------//
 }

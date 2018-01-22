@@ -4,11 +4,18 @@ using UnityEngine;
 
 public class ActivateStar : MonoBehaviour
 {
+	//Variables that help look up wether or not the star is active.
 	public bool active;
-	public float activeTimerSec = 300f;
+	public float activeTimerSec = 30f;
 
+	//Tracks Polaris + Temporary variable that helps with updating the star's timer
 	private GameObject polaris;
 	private float tempT;
+
+	//The three states the star is susceptible of having.
+	public GameObject untouched;
+	public GameObject activated;
+	public GameObject discovered;
 
 	//--------------------------START---------------------------//
 	void Start ()
@@ -22,13 +29,28 @@ public class ActivateStar : MonoBehaviour
 	//-------------------------UPDATE---------------------------//
 	void Update ()
 	{
-		if (active == true) {
-			tempT -= Time.deltaTime;
-			if (tempT < 0 && transform.parent.GetComponent<AreChildsActive> ().constDiscovered == false) { 
-				//If the indivual star timer runs out, and the constellation is still undiscovered, then :
-				active = false;
-				tempT = 0;
+		if (!GetComponentInParent<AreChildsActive> ().constDiscovered) { //Si la constellation n'est PAS découverte...
+			if (active == true) {
+				tempT -= Time.deltaTime;
+				if (tempT < 0 && transform.parent.GetComponent<AreChildsActive> ().constDiscovered == false) { 
+					//If the indivual star timer runs out, and the constellation is still undiscovered, then :
+					active = false;
+					tempT = 0;
+				}
+				if (!activated.activeSelf) {
+					activated.SetActive (true);
+					untouched.SetActive (false);
+					discovered.SetActive (false);
+				}
+			} else if (!untouched.activeSelf) {
+				activated.SetActive (false);
+				untouched.SetActive (true);
+				discovered.SetActive (false);
 			}
+		} else if (!discovered.activeSelf) {//Lorsque la constellation EST découverte...
+			activated.SetActive (false);
+			untouched.SetActive (false);
+			discovered.SetActive (true);
 		}
 	}
 	//----------------------------------------------------------//

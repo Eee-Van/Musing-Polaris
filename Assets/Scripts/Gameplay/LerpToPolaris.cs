@@ -15,7 +15,7 @@ public class LerpToPolaris : MonoBehaviour
 	//--------------------------START---------------------------//
 	void Start ()
 	{
-		
+		transform.position = new Vector3 (polaris.position.x, polaris.position.y, transform.position.z);
 	}
 	//----------------------------------------------------------//
 
