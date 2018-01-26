@@ -375,6 +375,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb3c232c4941f5342bec086cca5dc3cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playTargetRoom: TestRoom
   playAClip: {fileID: 8300000, guid: 76d2bec8138248846a1f62a840c370a1, type: 3}
   genericAClip: {fileID: 8300000, guid: 401efa9f9b6f0a440a7ae23f567db1ba, type: 3}
   leaveAClip: {fileID: 8300000, guid: c57a3401b295ff648a4feefd861a49e8, type: 3}

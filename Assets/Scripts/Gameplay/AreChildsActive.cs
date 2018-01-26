@@ -23,6 +23,11 @@ public class AreChildsActive : MonoBehaviour
 			if (CheckIfStarsAreActive ()) {
 				constDiscovered = true; //Once a constellation is Discovered, there's not going back.
 				DrawLinks[] drawLinks = GetComponentsInChildren<DrawLinks> (); //Choppe tous les Drawlinks enfants
+				ParticleSystem[] childrenPS = GetComponentsInChildren<ParticleSystem> ();
+				foreach (ParticleSystem CPS in childrenPS) {
+					CPS.Play ();
+					CPS.Emit (1);
+				}
 				foreach (DrawLinks scriptToActivate in drawLinks) {
 					scriptToActivate.enabled = true; //Active chacun d'entre eux
 				}

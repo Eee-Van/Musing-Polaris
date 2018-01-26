@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class OnClickControl : MonoBehaviour
 {
+	//Select the gameObject meant to appear when
+
 	//Variables used to control the movement of Polaris
 	private Transform polaris;
 	public GameObject parentStar;
@@ -24,6 +26,7 @@ public class OnClickControl : MonoBehaviour
 	{
 //		initParentColor = parentStar.GetComponent<SpriteRenderer> ().material.color;
 		polaris = Camera.main.GetComponent<LerpToPolaris> ().polaris;
+
 	}
 	//----------------------------------------------------------//
 
@@ -51,6 +54,9 @@ public class OnClickControl : MonoBehaviour
 	//----------------------ON_MOUSE_DOWN-----------------------//
 	void OnMouseDown ()
 	{
+		Debug.Log (1);
+		GetComponent<ParticleSystem> ().Play ();
+		GetComponent<ParticleSystem> ().Emit (1);
 		pullActive = true; //While true, Polaris is pulled
 		audioSource.pitch += Random.Range (-1, 1) / 25;
 		audioSource.PlayOneShot (onClickSound, 1f);
