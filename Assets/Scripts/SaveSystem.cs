@@ -5,8 +5,6 @@ using UnityEngine;
 
 public class SaveSystem : MonoBehaviour
 {
-	public string myPath;
-
 	private GameObject polaris;
 	private float tempFloatX;
 	private float tempFloatY;
@@ -32,9 +30,10 @@ public class SaveSystem : MonoBehaviour
 	public void Load ()
 	{
 		if (PlayerPrefs.HasKey ("polarisPosX") && PlayerPrefs.HasKey ("polarisPosY")) {
+			polaris = Camera.main.GetComponent<LerpToPolaris> ().polaris.gameObject;
 			tempFloatX = PlayerPrefs.GetFloat ("polarisPosX");
 			tempFloatY = PlayerPrefs.GetFloat ("polarisPosY");
-			polaris.transform.position = new Vector3 (tempFloatX, tempFloatY, 0);
+//			polaris.transform.position = new Vector3 (tempFloatX, tempFloatY, 0);
 		}
 	}
 	//----------------------------------------------------------//

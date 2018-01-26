@@ -6,10 +6,22 @@ using UnityEngine.SceneManagement;
 
 public class ReturnToMainMenu : MonoBehaviour
 {
+	//Variables qui gèrent la fermeture du jeu et le fade to black
 	public float fadespeed = 1;
 	public Image blackScreen;
-
 	private float holdTimer;
+
+	//Variable pour sauvegarder la position du joueur lorsqu'il quitte le jeu
+	private GameObject polaris;
+	public GameObject saveManagerObject;
+
+	//-------------------------START----------------------------//
+	void Start ()
+	{
+		polaris = Camera.main.GetComponent<LerpToPolaris> ().polaris.gameObject;
+	}
+	//----------------------------------------------------------//
+
 
 	//-------------------------UPDATE---------------------------//
 	void Update ()
@@ -32,6 +44,7 @@ public class ReturnToMainMenu : MonoBehaviour
 
 		if (holdTimer == 1) {
 			SceneManager.LoadScene ("MainMenu");
+			saveManagerObject.GetComponent<SaveSystem> ().Save ();
 		}
 	}
 	//----------------------------------------------------------//

@@ -4,19 +4,19 @@ using UnityEngine;
 
 public class ConstMusicControl : MonoBehaviour
 {
+	//Variables that manage the music players
 	public bool testVar = false;
 	public float musicVolumeRampSpeed = 0.02f;
 	public float musicRampAtStart = 0f;
+	//"musicRampAtStart" is a variable that makes the music ramps up much slower the first time it is invoked.
+	//It is subsequently set to 1 when the player first exits a constellation.
 	public float maxVolume = 0.5f;
-
-	private Transform polaris;
-	private Collider localCollider;
-
 	private bool isMusicActive = false;
 	private float localVolume = 0;
 
-	//"musicRampAtStart" is a variable that makes the music ramps up much slower the first time it is invoked.
-	//It is subsequently set to 1 when the player first exits a constellation.
+	//Variables for detecting entry in constellations from Polaris
+	private Transform polaris;
+	private Collider localCollider;
 
 	//--------------------------START---------------------------//
 	void Start ()

@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class OnClickControl : MonoBehaviour
 {
+	//Select the gameObject meant to appear when
+
 	//Variables used to control the movement of Polaris
 	private Transform polaris;
 	public GameObject parentStar;
@@ -11,12 +13,12 @@ public class OnClickControl : MonoBehaviour
 	private bool pullActive;
 
 	//Variables used to control the (out of date) material color lerp
-	public Color targetColor;
-	public float colorLerpSpeed;
-	private Color initParentColor;
+	//	public Color targetColor;
+	//	public float colorLerpSpeed;
+	//	private Color initParentColor;
 
 	//Variables used to control the sounds emitted
-	public AudioClip[] onClickSounds;
+	public AudioClip onClickSound;
 	public AudioSource audioSource;
 
 	//--------------------------START---------------------------//
@@ -24,6 +26,7 @@ public class OnClickControl : MonoBehaviour
 	{
 //		initParentColor = parentStar.GetComponent<SpriteRenderer> ().material.color;
 		polaris = Camera.main.GetComponent<LerpToPolaris> ().polaris;
+
 	}
 	//----------------------------------------------------------//
 
@@ -51,9 +54,12 @@ public class OnClickControl : MonoBehaviour
 	//----------------------ON_MOUSE_DOWN-----------------------//
 	void OnMouseDown ()
 	{
+		Debug.Log (1);
+		GetComponent<ParticleSystem> ().Play ();
+		GetComponent<ParticleSystem> ().Emit (1);
 		pullActive = true; //While true, Polaris is pulled
-		audioSource.pitch += Random.Range (-1, 1) / 50;
-		audioSource.PlayOneShot (onClickSounds [Random.Range (0, onClickSounds.Length)], 0.5f);
+		audioSource.pitch += Random.Range (-1, 1) / 25;
+		audioSource.PlayOneShot (onClickSound, 1f);
 	}
 	//----------------------------------------------------------//
 
@@ -79,8 +85,8 @@ public class OnClickControl : MonoBehaviour
 		//Puttin .normalized after direction makes the whole thing independent of DISTANCES
 
 		//Have to rework this part. It does nothing right now.
-		parentStar.GetComponent<SpriteRenderer> ().material.color = //Lerps the star's color over time			
-			Color.Lerp (targetColor, initParentColor, Mathf.PingPong (Time.time, colorLerpSpeed));
+//		parentStar.GetComponent<SpriteRenderer> ().material.color = //Lerps the star's color over time			
+//			Color.Lerp (targetColor, initParentColor, Mathf.PingPong (Time.time, colorLerpSpeed));
 	}
 	//--------------------------------------------------------//
 }

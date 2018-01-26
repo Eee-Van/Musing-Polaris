@@ -247,7 +247,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 99124087}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -33.529446, y: -4.36579, z: 0.10681691}
+  m_LocalPosition: {x: -36.05, y: -4.36579, z: 0.10681691}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children:
   - {fileID: 1972888689}
@@ -3747,6 +3747,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   active: 0
   activeTimerSec: 50
+  untouched: {fileID: 0}
+  activated: {fileID: 0}
+  discovered: {fileID: 0}
 --- !u!135 &101946228
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -3963,9 +3966,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   parentStar: {fileID: 1789251539}
   pullForce: 1.1
-  targetColor: {r: 1, g: 0, b: 0, a: 1}
-  colorLerpSpeed: 1
-  onClickSound: {fileID: 8300000, guid: 3d481f3c2c91c344f91dee4bf627ca89, type: 3}
+  onClickSounds: []
   audioSource: {fileID: 103841276}
 --- !u!135 &107679939
 SphereCollider:
@@ -3980,6 +3981,11 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.25
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!4 &146346464 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4125877404086346, guid: ebcdcf437bde5bb4d93fc22f82c9f913,
+    type: 2}
+  m_PrefabInternal: {fileID: 924355278}
 --- !u!1 &248657181
 GameObject:
   m_ObjectHideFlags: 0
@@ -4756,9 +4762,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   parentStar: {fileID: 1649687036}
   pullForce: 1.1
-  targetColor: {r: 1, g: 0, b: 0, a: 1}
-  colorLerpSpeed: 1
-  onClickSound: {fileID: 8300000, guid: 3d481f3c2c91c344f91dee4bf627ca89, type: 3}
+  onClickSounds: []
   audioSource: {fileID: 887166830}
 --- !u!135 &657654380
 SphereCollider:
@@ -4782,11 +4786,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4832975083583488, guid: c4f5421c676e21b47b9312687fbeff6d, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 22.47
       objectReference: {fileID: 0}
     - target: {fileID: 4832975083583488, guid: c4f5421c676e21b47b9312687fbeff6d, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 8.59
       objectReference: {fileID: 0}
     - target: {fileID: 4832975083583488, guid: c4f5421c676e21b47b9312687fbeff6d, type: 2}
       propertyPath: m_LocalPosition.z
@@ -4913,9 +4917,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   parentStar: {fileID: 1972888688}
   pullForce: 1.1
-  targetColor: {r: 1, g: 0, b: 0, a: 1}
-  colorLerpSpeed: 1
-  onClickSound: {fileID: 8300000, guid: 3d481f3c2c91c344f91dee4bf627ca89, type: 3}
+  onClickSounds: []
   audioSource: {fileID: 248657183}
 --- !u!135 &711519557
 SphereCollider:
@@ -8531,6 +8533,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   active: 0
   activeTimerSec: 50
+  untouched: {fileID: 0}
+  activated: {fileID: 0}
+  discovered: {fileID: 0}
 --- !u!135 &734350186
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -8745,9 +8750,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   parentStar: {fileID: 1887344103}
   pullForce: 1.1
-  targetColor: {r: 1, g: 0, b: 0, a: 1}
-  colorLerpSpeed: 1
-  onClickSound: {fileID: 8300000, guid: 3d481f3c2c91c344f91dee4bf627ca89, type: 3}
+  onClickSounds: []
   audioSource: {fileID: 722930381}
 --- !u!135 &776830465
 SphereCollider:
@@ -8879,6 +8882,82 @@ GameObject:
   m_PrefabParentObject: {fileID: 1281789596642140, guid: 72281143dedaec9498b51abbf63dfa8a,
     type: 2}
   m_PrefabInternal: {fileID: 739105970}
+--- !u!1001 &924355278
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 939646819}
+    m_Modifications:
+    - target: {fileID: 4125877404086346, guid: ebcdcf437bde5bb4d93fc22f82c9f913, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4125877404086346, guid: ebcdcf437bde5bb4d93fc22f82c9f913, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4125877404086346, guid: ebcdcf437bde5bb4d93fc22f82c9f913, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4125877404086346, guid: ebcdcf437bde5bb4d93fc22f82c9f913, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4125877404086346, guid: ebcdcf437bde5bb4d93fc22f82c9f913, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4125877404086346, guid: ebcdcf437bde5bb4d93fc22f82c9f913, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4125877404086346, guid: ebcdcf437bde5bb4d93fc22f82c9f913, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4125877404086346, guid: ebcdcf437bde5bb4d93fc22f82c9f913, type: 2}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1053726891265360, guid: ebcdcf437bde5bb4d93fc22f82c9f913, type: 2}
+      propertyPath: m_Name
+      value: Testo
+      objectReference: {fileID: 0}
+    - target: {fileID: 65822923090825376, guid: ebcdcf437bde5bb4d93fc22f82c9f913,
+        type: 2}
+      propertyPath: m_Size.y
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 65822923090825376, guid: ebcdcf437bde5bb4d93fc22f82c9f913,
+        type: 2}
+      propertyPath: m_Center.y
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 65822923090825376, guid: ebcdcf437bde5bb4d93fc22f82c9f913,
+        type: 2}
+      propertyPath: m_Size.x
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 65822923090825376, guid: ebcdcf437bde5bb4d93fc22f82c9f913,
+        type: 2}
+      propertyPath: m_Center.x
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 65822923090825376, guid: ebcdcf437bde5bb4d93fc22f82c9f913,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 82861363581729960, guid: ebcdcf437bde5bb4d93fc22f82c9f913,
+        type: 2}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 041482d6e8af1a048a14e4809e6dd2c2, type: 3}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: ebcdcf437bde5bb4d93fc22f82c9f913, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &939646818
 GameObject:
   m_ObjectHideFlags: 0
@@ -8906,6 +8985,7 @@ Transform:
   m_Children:
   - {fileID: 1415702599}
   - {fileID: 99124091}
+  - {fileID: 146346464}
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -9049,9 +9129,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   parentStar: {fileID: 101946223}
   pullForce: 1.1
-  targetColor: {r: 1, g: 0, b: 0, a: 1}
-  colorLerpSpeed: 1
-  onClickSound: {fileID: 8300000, guid: 3d481f3c2c91c344f91dee4bf627ca89, type: 3}
+  onClickSounds: []
   audioSource: {fileID: 1947929801}
 --- !u!135 &976024879
 SphereCollider:
@@ -9112,9 +9190,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   parentStar: {fileID: 2013753517}
   pullForce: 1.1
-  targetColor: {r: 1, g: 0, b: 0, a: 1}
-  colorLerpSpeed: 1
-  onClickSound: {fileID: 8300000, guid: 3d481f3c2c91c344f91dee4bf627ca89, type: 3}
+  onClickSounds: []
   audioSource: {fileID: 551237386}
 --- !u!135 &986267802
 SphereCollider:
@@ -9129,6 +9205,58 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.25
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!1001 &1032994346
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 146346464}
+    m_Modifications:
+    - target: {fileID: 4443425253521460, guid: 7f3e680a376d4844780ca1266889b47e, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4443425253521460, guid: 7f3e680a376d4844780ca1266889b47e, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4443425253521460, guid: 7f3e680a376d4844780ca1266889b47e, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4443425253521460, guid: 7f3e680a376d4844780ca1266889b47e, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4443425253521460, guid: 7f3e680a376d4844780ca1266889b47e, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4443425253521460, guid: 7f3e680a376d4844780ca1266889b47e, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4443425253521460, guid: 7f3e680a376d4844780ca1266889b47e, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4443425253521460, guid: 7f3e680a376d4844780ca1266889b47e, type: 2}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 135002835084054108, guid: 7f3e680a376d4844780ca1266889b47e,
+        type: 2}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: 61c0d2f2546579c4e91ab0cb3adcdb78,
+        type: 2}
+    - target: {fileID: 1733354726552850, guid: 7f3e680a376d4844780ca1266889b47e, type: 2}
+      propertyPath: m_Name
+      value: TestoStar1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 7f3e680a376d4844780ca1266889b47e, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &1037388065
 GameObject:
   m_ObjectHideFlags: 0
@@ -9227,11 +9355,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4843422896553730, guid: bcf14384572a626458ccaab4571191b1, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 22.47
       objectReference: {fileID: 0}
     - target: {fileID: 4843422896553730, guid: bcf14384572a626458ccaab4571191b1, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 8.59
       objectReference: {fileID: 0}
     - target: {fileID: 4843422896553730, guid: bcf14384572a626458ccaab4571191b1, type: 2}
       propertyPath: m_LocalPosition.z
@@ -9336,9 +9464,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   parentStar: {fileID: 734350180}
   pullForce: 1.1
-  targetColor: {r: 1, g: 0, b: 0, a: 1}
-  colorLerpSpeed: 1
-  onClickSound: {fileID: 8300000, guid: 3d481f3c2c91c344f91dee4bf627ca89, type: 3}
+  onClickSounds: []
   audioSource: {fileID: 639653828}
 --- !u!135 &1250079830
 SphereCollider:
@@ -12833,6 +12959,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   active: 0
   activeTimerSec: 50
+  untouched: {fileID: 0}
+  activated: {fileID: 0}
+  discovered: {fileID: 0}
 --- !u!135 &1318754311
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -13272,9 +13401,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   parentStar: {fileID: 1318754306}
   pullForce: 1.1
-  targetColor: {r: 1, g: 0, b: 0, a: 1}
-  colorLerpSpeed: 1
-  onClickSound: {fileID: 8300000, guid: 3d481f3c2c91c344f91dee4bf627ca89, type: 3}
+  onClickSounds: []
   audioSource: {fileID: 352826049}
 --- !u!135 &1455827629
 SphereCollider:
@@ -16762,6 +16889,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   active: 0
   activeTimerSec: 50
+  untouched: {fileID: 0}
+  activated: {fileID: 0}
+  discovered: {fileID: 0}
 --- !u!135 &1462385363
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -16872,9 +17002,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   parentStar: {fileID: 1702365512}
   pullForce: 1.1
-  targetColor: {r: 1, g: 0, b: 0, a: 1}
-  colorLerpSpeed: 1
-  onClickSound: {fileID: 8300000, guid: 3d481f3c2c91c344f91dee4bf627ca89, type: 3}
+  onClickSounds: []
   audioSource: {fileID: 1711360510}
 --- !u!135 &1516730410
 SphereCollider:
@@ -20378,6 +20506,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   active: 0
   activeTimerSec: 50
+  untouched: {fileID: 0}
+  activated: {fileID: 0}
+  discovered: {fileID: 0}
 --- !u!135 &1649687042
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -23925,6 +24056,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   active: 0
   activeTimerSec: 50
+  untouched: {fileID: 0}
+  activated: {fileID: 0}
+  discovered: {fileID: 0}
 --- !u!135 &1702365518
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -24029,9 +24163,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   parentStar: {fileID: 1915859726}
   pullForce: 1.1
-  targetColor: {r: 1, g: 0, b: 0, a: 1}
-  colorLerpSpeed: 1
-  onClickSound: {fileID: 8300000, guid: 3d481f3c2c91c344f91dee4bf627ca89, type: 3}
+  onClickSounds: []
   audioSource: {fileID: 480287886}
 --- !u!135 &1706724202
 SphereCollider:
@@ -24204,9 +24336,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   parentStar: {fileID: 1982525326}
   pullForce: 1.1
-  targetColor: {r: 1, g: 0, b: 0, a: 1}
-  colorLerpSpeed: 1
-  onClickSound: {fileID: 8300000, guid: 3d481f3c2c91c344f91dee4bf627ca89, type: 3}
+  onClickSounds: []
   audioSource: {fileID: 504648438}
 --- !u!135 &1722164750
 SphereCollider:
@@ -27710,6 +27840,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   active: 0
   activeTimerSec: 50
+  untouched: {fileID: 0}
+  activated: {fileID: 0}
+  discovered: {fileID: 0}
 --- !u!135 &1789251545
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -27768,6 +27901,52 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!1001 &1825778221
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 146346464}
+    m_Modifications:
+    - target: {fileID: 4443425253521460, guid: 7f3e680a376d4844780ca1266889b47e, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4443425253521460, guid: 7f3e680a376d4844780ca1266889b47e, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4443425253521460, guid: 7f3e680a376d4844780ca1266889b47e, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4443425253521460, guid: 7f3e680a376d4844780ca1266889b47e, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4443425253521460, guid: 7f3e680a376d4844780ca1266889b47e, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4443425253521460, guid: 7f3e680a376d4844780ca1266889b47e, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4443425253521460, guid: 7f3e680a376d4844780ca1266889b47e, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4443425253521460, guid: 7f3e680a376d4844780ca1266889b47e, type: 2}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1733354726552850, guid: 7f3e680a376d4844780ca1266889b47e, type: 2}
+      propertyPath: m_Name
+      value: TestoStar2
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 7f3e680a376d4844780ca1266889b47e, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &1887344103
 GameObject:
   m_ObjectHideFlags: 0
@@ -31257,6 +31436,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   active: 0
   activeTimerSec: 50
+  untouched: {fileID: 0}
+  activated: {fileID: 0}
+  discovered: {fileID: 0}
 --- !u!135 &1887344109
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -34788,6 +34970,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   active: 0
   activeTimerSec: 50
+  untouched: {fileID: 0}
+  activated: {fileID: 0}
+  discovered: {fileID: 0}
 --- !u!135 &1915859731
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -38447,6 +38632,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   active: 0
   activeTimerSec: 50
+  untouched: {fileID: 0}
+  activated: {fileID: 0}
+  discovered: {fileID: 0}
 --- !u!135 &1972888694
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -41978,6 +42166,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   active: 0
   activeTimerSec: 50
+  untouched: {fileID: 0}
+  activated: {fileID: 0}
+  discovered: {fileID: 0}
 --- !u!135 &1982525331
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -45509,6 +45700,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   active: 0
   activeTimerSec: 50
+  untouched: {fileID: 0}
+  activated: {fileID: 0}
+  discovered: {fileID: 0}
 --- !u!135 &2013753522
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -45629,9 +45823,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   parentStar: {fileID: 1462385358}
   pullForce: 1.1
-  targetColor: {r: 1, g: 0, b: 0, a: 1}
-  colorLerpSpeed: 1
-  onClickSound: {fileID: 8300000, guid: 3d481f3c2c91c344f91dee4bf627ca89, type: 3}
+  onClickSounds: []
   audioSource: {fileID: 1364360154}
 --- !u!135 &2105747460
 SphereCollider:
