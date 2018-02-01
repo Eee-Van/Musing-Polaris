@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using NUnit.Framework;
 
 public class ConstMusicControl : MonoBehaviour
 {
@@ -17,15 +18,18 @@ public class ConstMusicControl : MonoBehaviour
 	//Variables for detecting entry in constellations from Polaris
 	private Transform polaris;
 	private Collider localCollider;
+	private bool hasEnteredConst = false;
 
 	//--------------------------START---------------------------//
 	void Start ()
 	{
 		polaris = Camera.main.GetComponent<LerpToPolaris> ().polaris;
 		localCollider = GetComponent<Collider> ();
-		if (localCollider.bounds.Contains (polaris.position)) {
-			isMusicActive = true;
-			Camera.main.GetComponent<LerpToPolaris> ().currentConst = gameObject.name;
+		if (localCollider != null) {
+			if (localCollider.bounds.Contains (polaris.position)) {
+				isMusicActive = true;
+				Camera.main.GetComponent<LerpToPolaris> ().currentConst = gameObject.name;
+			}
 		}
 		maxVolume = maxVolume * PlayerPrefs.GetFloat ("masterVolumePref") * 2;
 		StartCoroutine (RemoveStartRamp ());
@@ -62,10 +66,12 @@ public class ConstMusicControl : MonoBehaviour
 		}// End of the current constellation check.--------------------------------------
 
 		//This is a check that checks wether or not polaris is within the collider's bounds (As of now it works.)
-		if (localCollider.bounds.Contains (polaris.position)) {
-			testVar = true;
-		} else
-			testVar = false;
+		if (localCollider != null) {
+			if (localCollider.bounds.Contains (polaris.position)) {
+				testVar = true;
+			} else
+				testVar = false;
+		}
 		//-------------------------------------------------------------------------------
 	}
 	//-------------------------------------------------------//
@@ -75,7 +81,27 @@ public class ConstMusicControl : MonoBehaviour
 	{
 		if (other == polaris.GetComponent<Collider> ()) {
 			Camera.main.GetComponent<LerpToPolaris> ().currentConst = gameObject.name;
+			hasEnteredConst = true;
+			StartCoroutine (voidTimer ());
 		}
+	}
+	//-------------------------------------------------------//
+
+	//------------------ON_TRIGGER_ENTER---------------------//
+	void OnTriggerExit (Collider other)
+	{
+		if (other == polaris.GetComponent<Collider> () & hasEnteredConst == false) {
+			Camera.main.GetComponent<LerpToPolaris> ().currentConst = "nullConstellation";
+		}
+	}
+	//-------------------------------------------------------//
+
+	//------------------REMOVE_START_RAMP---------------------//
+	IEnumerator voidTimer ()
+	{
+		yield return new WaitForSeconds (0.75f);
+		hasEnteredConst = false;
+		yield return null;
 	}
 	//-------------------------------------------------------//
 

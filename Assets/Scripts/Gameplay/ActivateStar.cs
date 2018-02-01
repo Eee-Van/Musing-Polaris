@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEditor;
 
 public class ActivateStar : MonoBehaviour
 {
@@ -16,6 +17,8 @@ public class ActivateStar : MonoBehaviour
 	public GameObject untouched;
 	public GameObject activated;
 	public GameObject discovered;
+	public AudioSource starAudioPlayer;
+	public AudioClip discoverySound;
 
 	//--------------------------START---------------------------//
 	void Start ()
@@ -51,6 +54,7 @@ public class ActivateStar : MonoBehaviour
 			activated.SetActive (false);
 			untouched.SetActive (false);
 			discovered.SetActive (true);
+			starAudioPlayer.PlayOneShot (discoverySound);
 		}
 	}
 	//----------------------------------------------------------//

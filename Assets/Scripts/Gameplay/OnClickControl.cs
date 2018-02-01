@@ -20,6 +20,7 @@ public class OnClickControl : MonoBehaviour
 	//Variables used to control the sounds emitted
 	public AudioClip onClickSound;
 	public AudioSource audioSource;
+	public float pitchRange;
 
 	//--------------------------START---------------------------//
 	void Start ()
@@ -58,7 +59,7 @@ public class OnClickControl : MonoBehaviour
 		GetComponent<ParticleSystem> ().Play ();
 		GetComponent<ParticleSystem> ().Emit (1);
 		pullActive = true; //While true, Polaris is pulled
-		audioSource.pitch += Random.Range (-1, 1) / 25;
+		audioSource.pitch = 1 + Random.Range (-1f, 1f)/pitchRange;
 		audioSource.PlayOneShot (onClickSound, 1f);
 	}
 	//----------------------------------------------------------//
