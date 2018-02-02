@@ -1,7 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEditor;
+
+//using UnityEditor;
 
 public class ActivateStar : MonoBehaviour
 {
@@ -19,6 +20,7 @@ public class ActivateStar : MonoBehaviour
 	public GameObject discovered;
 	public AudioSource starAudioPlayer;
 	public AudioClip discoverySound;
+	public AudioClip activationSound;
 
 	//--------------------------START---------------------------//
 	void Start ()
@@ -49,6 +51,7 @@ public class ActivateStar : MonoBehaviour
 				activated.SetActive (false);
 				untouched.SetActive (true);
 				discovered.SetActive (false);
+				starAudioPlayer.PlayOneShot (activationSound);
 			}
 		} else if (!discovered.activeSelf) {//Lorsque la constellation EST découverte...
 			activated.SetActive (false);
