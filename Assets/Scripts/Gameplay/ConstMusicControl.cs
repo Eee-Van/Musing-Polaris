@@ -100,7 +100,7 @@ public class ConstMusicControl : MonoBehaviour
 	//------------------REMOVE_START_RAMP---------------------//
 	IEnumerator voidTimer ()
 	{
-		yield return new WaitForSeconds (0.75f);
+		yield return new WaitForSeconds (1.5f);
 		hasEnteredConst = false;
 		yield return null;
 	}
