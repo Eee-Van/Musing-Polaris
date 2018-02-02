@@ -1125,7 +1125,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 500}
+  m_AnchoredPosition: {x: 0, y: 484}
   m_SizeDelta: {x: 1300.6, y: 178.8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &609729260
@@ -1149,8 +1149,8 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: Musing Polaris
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 5b49df2553368a44faa4c9131d5f2521, type: 2}
-  m_sharedMaterial: {fileID: 21345692084402096, guid: 5b49df2553368a44faa4c9131d5f2521,
+  m_fontAsset: {fileID: 11400000, guid: 975ed74b31e104745816122aa249cf36, type: 2}
+  m_sharedMaterial: {fileID: 21920782757950056, guid: 975ed74b31e104745816122aa249cf36,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -1175,10 +1175,10 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 122.75
-  m_fontSizeBase: 36
+  m_fontSize: 196.3
+  m_fontSizeBase: 196.3
   m_fontWeight: 400
-  m_enableAutoSizing: 1
+  m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 300
   m_fontStyle: 32
@@ -1193,7 +1193,7 @@ MonoBehaviour:
   m_enableWordWrapping: 0
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
-  m_firstOverflowCharacterIndex: -1
+  m_firstOverflowCharacterIndex: 0
   m_linkedTextComponent: {fileID: 0}
   m_isLinkedTextComponent: 0
   m_enableKerning: 1
