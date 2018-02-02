@@ -124,6 +124,7 @@ GameObject:
   - component: {fileID: 114162998010769582}
   - component: {fileID: 114013780508345336}
   - component: {fileID: 199607104715264112}
+  - component: {fileID: 114384301346193800}
   - component: {fileID: 198171464703612570}
   m_Layer: 0
   m_Name: Star_Prefab 1
@@ -341,6 +342,18 @@ MonoBehaviour:
   starAudioPlayer: {fileID: 82844116250365706}
   discoverySound: {fileID: 0}
   activationSound: {fileID: 8300000, guid: 865c9ee57cfe2b240b614b22ef01d076, type: 3}
+--- !u!114 &114384301346193800
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1733354726552850}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb62c5dda488ae748b291e0f27847f14, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  linePrefab: {fileID: 1721878980031736, guid: f86029f25f677bc44bc4708a397c33dc, type: 2}
 --- !u!114 &114438326498540028
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -353,7 +366,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   parentStar: {fileID: 1733354726552850}
-  pullForce: 5
+  pullForce: 6
   onClickSound: {fileID: 8300000, guid: c3c594c975a84db4183d830be47db88c, type: 3}
   audioSource: {fileID: 82844116250365706}
   pitchRange: 30

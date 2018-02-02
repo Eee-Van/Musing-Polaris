@@ -59,7 +59,7 @@ public class OnClickControl : MonoBehaviour
 		GetComponent<ParticleSystem> ().Play ();
 		GetComponent<ParticleSystem> ().Emit (1);
 		pullActive = true; //While true, Polaris is pulled
-		audioSource.pitch = 1 + Random.Range (-1f, 1f)/pitchRange;
+		audioSource.pitch = 1 + Random.Range (-1f, 1f) / pitchRange;
 		audioSource.PlayOneShot (onClickSound, 1f);
 	}
 	//----------------------------------------------------------//
@@ -79,8 +79,8 @@ public class OnClickControl : MonoBehaviour
 	{
 //		Système dépendant de la distance entre l'étoile et Polaris :
 		Vector3 direction = new Vector3 (//Defines the direction from Polaris to the star
-			                    (transform.position.x - polarisRB.transform.position.x),
-			                    (transform.position.y - polarisRB.transform.position.y));
+			                    (transform.position.x - polarisRB.transform.position.x - polarisRB.velocity.x / 5f),
+			                    (transform.position.y - polarisRB.transform.position.y - polarisRB.velocity.y / 5f));
 		polarisRB.AddForce ((direction.normalized) * pullForce, ForceMode.Force); //Pushes Polaris using the previous direction
 		//Can vary the "pull" strength by varying pullForce
 		//Puttin .normalized after direction makes the whole thing independent of DISTANCES
