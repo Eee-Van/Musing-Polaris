@@ -239,7 +239,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -334,12 +334,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   active: 0
-  activeTimerSec: 50
+  activeTimerSec: 500
   untouched: {fileID: 1331777765304330}
   activated: {fileID: 1111629393551906}
   discovered: {fileID: 1181693457694658}
   starAudioPlayer: {fileID: 82844116250365706}
-  discoverySound: {fileID: 8300000, guid: 3d481f3c2c91c344f91dee4bf627ca89, type: 3}
+  discoverySound: {fileID: 0}
+  activationSound: {fileID: 8300000, guid: 865c9ee57cfe2b240b614b22ef01d076, type: 3}
 --- !u!114 &114438326498540028
 MonoBehaviour:
   m_ObjectHideFlags: 1

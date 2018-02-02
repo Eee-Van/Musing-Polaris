@@ -46,12 +46,12 @@ public class ActivateStar : MonoBehaviour
 					activated.SetActive (true);
 					untouched.SetActive (false);
 					discovered.SetActive (false);
+					starAudioPlayer.PlayOneShot (activationSound);
 				}
 			} else if (!untouched.activeSelf) {
 				activated.SetActive (false);
 				untouched.SetActive (true);
 				discovered.SetActive (false);
-				starAudioPlayer.PlayOneShot (activationSound);
 			}
 		} else if (!discovered.activeSelf) {//Lorsque la constellation EST découverte...
 			activated.SetActive (false);
