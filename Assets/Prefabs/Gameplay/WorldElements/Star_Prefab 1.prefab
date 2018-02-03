@@ -182,7 +182,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1733354726552850}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -215.65941, y: -848.5017, z: 0}
+  m_LocalPosition: {x: -3.31, y: 3.84, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4035670426326166}
@@ -335,13 +335,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   active: 0
-  activeTimerSec: 500
+  activeTimerSec: 1000
   untouched: {fileID: 1331777765304330}
   activated: {fileID: 1111629393551906}
   discovered: {fileID: 1181693457694658}
   starAudioPlayer: {fileID: 82844116250365706}
   discoverySound: {fileID: 0}
   activationSound: {fileID: 8300000, guid: 865c9ee57cfe2b240b614b22ef01d076, type: 3}
+  activationFX: {fileID: 1424939502714212, guid: 795cb1674ed338f49a82c36898399672,
+    type: 2}
 --- !u!114 &114384301346193800
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -454,7 +456,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: 1028380803
+  randomSeed: 1157530681
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -1362,7 +1364,7 @@ ParticleSystem:
       maxColor: {r: 1, g: 1, b: 1, a: 1}
       maxGradient:
         serializedVersion: 2
-        key0: {r: 1, g: 1, b: 1, a: 0}
+        key0: {r: 0.9490196, g: 0.9529412, b: 0.27450982, a: 0}
         key1: {r: 1, g: 1, b: 1, a: 1}
         key2: {r: 0, g: 0, b: 0, a: 0.5882353}
         key3: {r: 0, g: 0, b: 0, a: 0}
@@ -3821,7 +3823,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: 2061135638
+  randomSeed: 127670505
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -7135,8 +7137,8 @@ ParticleSystem:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1111629393551906}
   serializedVersion: 5
-  lengthInSec: 5
-  simulationSpeed: 0.1
+  lengthInSec: 1
+  simulationSpeed: 0.2
   stopAction: 0
   looping: 1
   prewarm: 1
@@ -7195,7 +7197,7 @@ ParticleSystem:
     startLifetime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 1.5
+      scalar: 0.45
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -7340,7 +7342,7 @@ ParticleSystem:
     startSize:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 1.5
+      scalar: 1.25
       minScalar: 1
       maxCurve:
         serializedVersion: 2
@@ -7748,7 +7750,7 @@ ParticleSystem:
     rateOverTime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 4
+      scalar: 10
       minScalar: 10
       maxCurve:
         serializedVersion: 2
@@ -8096,16 +8098,16 @@ ParticleSystem:
       maxColor: {r: 1, g: 1, b: 1, a: 1}
       maxGradient:
         serializedVersion: 2
-        key0: {r: 1, g: 1, b: 1, a: 0}
-        key1: {r: 1, g: 1, b: 1, a: 0.7058824}
-        key2: {r: 1, g: 1, b: 1, a: 0}
+        key0: {r: 0.9490196, g: 0.9529412, b: 0.27450982, a: 0}
+        key1: {r: 0.9490196, g: 0.9529412, b: 0.27450982, a: 0.7058824}
+        key2: {r: 1, g: 1, b: 1, a: 0.48235294}
         key3: {r: 1, g: 1, b: 1, a: 0}
         key4: {r: 0, g: 0, b: 0, a: 0}
         key5: {r: 0, g: 0, b: 0, a: 0}
         key6: {r: 0, g: 0, b: 0, a: 0}
         key7: {r: 0, g: 0, b: 0, a: 0}
         ctime0: 0
-        ctime1: 37201
+        ctime1: 65535
         ctime2: 65535
         ctime3: 65535
         ctime4: 0
@@ -8121,7 +8123,7 @@ ParticleSystem:
         atime6: 0
         atime7: 0
         m_Mode: 0
-        m_NumColorKeys: 3
+        m_NumColorKeys: 2
         m_NumAlphaKeys: 3
       minGradient:
         serializedVersion: 2
@@ -11463,16 +11465,16 @@ ParticleSystem:
       maxColor: {r: 1, g: 1, b: 1, a: 1}
       maxGradient:
         serializedVersion: 2
-        key0: {r: 1, g: 1, b: 1, a: 0}
-        key1: {r: 1, g: 1, b: 1, a: 0.7058824}
-        key2: {r: 1, g: 1, b: 1, a: 0}
+        key0: {r: 0.9490196, g: 0.9529412, b: 0.27450982, a: 0}
+        key1: {r: 0.9490196, g: 0.9529412, b: 0.27450982, a: 0.7058824}
+        key2: {r: 1, g: 1, b: 1, a: 0.48235294}
         key3: {r: 1, g: 1, b: 1, a: 0}
         key4: {r: 0, g: 0, b: 0, a: 0}
         key5: {r: 0, g: 0, b: 0, a: 0}
         key6: {r: 0, g: 0, b: 0, a: 0}
         key7: {r: 0, g: 0, b: 0, a: 0}
         ctime0: 0
-        ctime1: 37201
+        ctime1: 65535
         ctime2: 65535
         ctime3: 65535
         ctime4: 0
@@ -11488,7 +11490,7 @@ ParticleSystem:
         atime6: 0
         atime7: 0
         m_Mode: 0
-        m_NumColorKeys: 3
+        m_NumColorKeys: 2
         m_NumAlphaKeys: 3
       minGradient:
         serializedVersion: 2
@@ -13869,7 +13871,7 @@ ParticleSystem:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1181693457694658}
   serializedVersion: 5
-  lengthInSec: 5
+  lengthInSec: 2
   simulationSpeed: 0.1
   stopAction: 0
   looping: 1
@@ -13929,7 +13931,7 @@ ParticleSystem:
     startLifetime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 3
+      scalar: 1
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -14830,16 +14832,16 @@ ParticleSystem:
       maxColor: {r: 1, g: 1, b: 1, a: 1}
       maxGradient:
         serializedVersion: 2
-        key0: {r: 1, g: 1, b: 1, a: 0}
-        key1: {r: 1, g: 1, b: 1, a: 0.7058824}
-        key2: {r: 1, g: 1, b: 1, a: 0}
+        key0: {r: 0.9490196, g: 0.9529412, b: 0.27450982, a: 0}
+        key1: {r: 0.9490196, g: 0.9529412, b: 0.27450982, a: 0.7058824}
+        key2: {r: 1, g: 1, b: 1, a: 0.48235294}
         key3: {r: 1, g: 1, b: 1, a: 0}
         key4: {r: 0, g: 0, b: 0, a: 0}
         key5: {r: 0, g: 0, b: 0, a: 0}
         key6: {r: 0, g: 0, b: 0, a: 0}
         key7: {r: 0, g: 0, b: 0, a: 0}
         ctime0: 0
-        ctime1: 37201
+        ctime1: 65535
         ctime2: 65535
         ctime3: 65535
         ctime4: 0
@@ -14855,7 +14857,7 @@ ParticleSystem:
         atime6: 0
         atime7: 0
         m_Mode: 0
-        m_NumColorKeys: 3
+        m_NumColorKeys: 2
         m_NumAlphaKeys: 3
       minGradient:
         serializedVersion: 2

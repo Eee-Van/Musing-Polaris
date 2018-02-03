@@ -21,6 +21,7 @@ public class ActivateStar : MonoBehaviour
 	public AudioSource starAudioPlayer;
 	public AudioClip discoverySound;
 	public AudioClip activationSound;
+	public GameObject activationFX;
 
 	//--------------------------START---------------------------//
 	void Start ()
@@ -47,6 +48,7 @@ public class ActivateStar : MonoBehaviour
 					untouched.SetActive (false);
 					discovered.SetActive (false);
 					starAudioPlayer.PlayOneShot (activationSound);
+					Instantiate (activationFX, transform.position, Quaternion.identity);
 				}
 			} else if (!untouched.activeSelf) {
 				activated.SetActive (false);
